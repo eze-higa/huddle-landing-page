@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;    
+}
+
+html, body{
+    height: 100%;
+    background-color: hsl(257, 40%, 49%);    
+    box-sizing: border-box;
+}
+
+    .app{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1.5rem;
+        color: white;
+        background-image: url('../images/bg-mobile.svg');
+        justify-content: space-between;
+    }
+        .logo-reference{
+            text-decoration: none;
+        }
+        .svg-logo{
+            width: 40%;
+        }
+        .app-main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .svg-image{
+            width: 100%;
+            height: 100%;
+        }
+        .app-description{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;            
+        }       
+            .app-article > h1{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 400;
+            }
+            .app-article > * {
+                padding: 0.5rem;
+            }
+
+            .app-article > p {
+                font-weight: 400;
+                font-family: 'Open Sans', sans-serif;
+            }
+        .btn{
+            background-color: white;
+            color: hsl(257, 40%, 49%);
+            border-radius: 28px;
+            border: none;
+            padding: 0.5rem 4rem;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1)
+        }
+        .app-footer{
+            margin: 0 auto;
+        }
+            .fa-white{
+                color:white;
+            }
+
+            .ul-menu{
+                list-style: none;
+                display: flex;
+            }
+
+    @media only screen and (min-width: 768px){        
+        .app{
+            background-image: url('../images/bg-desktop.svg');
+            align-items: flex-start;
+            padding: 2rem 4rem;
+        }
+
+            .svg-logo{
+                width: auto;
+            }
+
+            .app-main{
+                flex-direction: row;
+            }
+                .app-image{
+                    width: 50%;
+                }
+
+                .app-description{
+                    text-align: justify;
+                    width: 30%;
+                    height: 100%;
+                    padding: 4rem 2rem;
+                    align-items: flex-start;
+                }
+                    .app-article{
+                        padding: 2rem 0rem;
+                    }
+
+                        .app-article > h1 {
+                            font-size: xx-large;
+                            font-weight: 700;
+                        }
+
+                        .app-article > * {
+                            padding: 1rem 0rem;
+                        }
+                .btn{
+                    padding: 1rem 4rem;
+                }
+            
+            .app-footer{
+                width: 100%;
+            }
+                .footer-logo{
+                    float: right;
+                }
+    }
